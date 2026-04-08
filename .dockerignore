@@ -1,0 +1,35 @@
+@"
+node_modules
+
+# Logs and env
+npm-debug.log
+.env
+*.log
+.DS_Store
+
+sentrydash-frontend/
+# Terraform files - don't include in container
+terraform/
+*.tf
+*.tfvars
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+#scripts
+scripts/
+
+#k8s deployment files
+k8s/
+# Git
+.git
+.gitignore
+
+# GitHub Actions
+.github/
+
+# IDE
+.vscode/
+.idea/
+"@ | Out-File -FilePath .dockerignore -Encoding utf8
