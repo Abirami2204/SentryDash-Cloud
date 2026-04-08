@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sentrydash-frontend
+  namespace: sentrydash
+  labels:
+    app: sentrydash-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sentrydash-frontend
+  template:
+    metadata:
+      labels:
+        app: sentrydash-frontend
+    spec:
+      containers:
+        - name: sentrydash-frontend
+          image: sentrydash.azurecr.io/sentrydash-frontend:v4
+          ports:
+            - containerPort: 80

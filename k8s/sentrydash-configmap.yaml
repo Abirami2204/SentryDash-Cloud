@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sentrydash-config
+  namespace: sentrydash
+data:
+  APP_NAME: "SentryDash"
