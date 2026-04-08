@@ -53,5 +53,3 @@ sentrydash-frontend/*.tmp
 #k8s secrets
 k8s/sentrydash-secret.yaml
 
-#github workflows
-.github/workflows/deploy.yml
