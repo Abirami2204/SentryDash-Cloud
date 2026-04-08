@@ -17,6 +17,7 @@ spec:
     spec:
       containers:
         - name: sentrydash-frontend
-          image: sentrydash.azurecr.io/sentrydash-frontend:v4
+          image: sentrydash2204.azurecr.io/sentrydash-frontend:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
